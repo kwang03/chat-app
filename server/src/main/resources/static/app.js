@@ -5,9 +5,9 @@ const stompClient = new StompJs.Client({
 stompClient.onConnect = (frame) => {
     setConnected(true);
     console.log('Connected: ' + frame);
-    stompClient.subscribe('/topic/two', (greeting) => {//  Id must be the same as subscribed route
-        showGreeting(JSON.parse(greeting.body).content);
-    }, {id: "/topic/two"});
+    stompClient.subscribe('/topic/two', (greeting) => {
+        showGreeting(JSON.parse(greeting.body).message);
+    }, {id: $("#name").val()});
 };
 
 stompClient.onWebSocketError = (error) => {
