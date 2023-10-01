@@ -3,6 +3,7 @@ package com.kwang03.chatappserver.messages;
 public class HelloMessage {
 
 	private String name;
+	public String userId;
 
 	public HelloMessage() {
 	}

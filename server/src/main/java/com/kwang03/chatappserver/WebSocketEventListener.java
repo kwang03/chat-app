@@ -1,7 +1,7 @@
 package com.kwang03.chatappserver;
 
-import com.kwang03.chatappserver.messages.ConnectionMessageContent;
-import com.kwang03.chatappserver.messages.DisconnectionMessageContent;
+import com.kwang03.chatappserver.messages.content.ConnectionMessageContent;
+import com.kwang03.chatappserver.messages.content.DisconnectionMessageContent;
 import com.kwang03.chatappserver.messages.MessageFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.event.EventListener;

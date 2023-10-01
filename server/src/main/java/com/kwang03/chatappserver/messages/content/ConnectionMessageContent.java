@@ -1,10 +1,13 @@
-package com.kwang03.chatappserver.messages;
+package com.kwang03.chatappserver.messages.content;
 
-import lombok.*;
+import lombok.Data;
 
 @Data
-@AllArgsConstructor
-public class ConnectionMessageContent extends MessageContent{
-    private String userId;
+public class ConnectionMessageContent extends MessageContent {
     private String endpoint;
+
+    public ConnectionMessageContent(String userId, String endpoint) {
+        this.userId = userId;
+        this.endpoint = endpoint;
+    }
 }

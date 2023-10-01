@@ -1,9 +1,6 @@
 package com.kwang03.chatappserver.messages;
 
-import com.kwang03.chatappserver.messages.ConnectionMessage;
-import com.kwang03.chatappserver.messages.DisconnectionMessage;
-import com.kwang03.chatappserver.messages.MessageContent;
-import com.kwang03.chatappserver.messages.SimpleMessage;
+import com.kwang03.chatappserver.messages.content.MessageContent;
 
 public class MessageFactory {
 

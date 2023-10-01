@@ -1,7 +1,7 @@
 package com.kwang03.chatappserver;
 
 
-import com.kwang03.chatappserver.messages.MessageContent;
+import com.kwang03.chatappserver.messages.content.MessageContent;
 import com.kwang03.chatappserver.messages.MessageFactory;
 import com.kwang03.chatappserver.messages.SimpleMessage;
 import org.springframework.messaging.simp.SimpMessagingTemplate;
