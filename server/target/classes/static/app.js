@@ -5,9 +5,9 @@ const stompClient = new StompJs.Client({
 stompClient.onConnect = (frame) => {
     setConnected(true);
     console.log('Connected: ' + frame);
-    stompClient.subscribe('/topic/two', (greeting) => {//  Id must be the same as subscribed route
-        showGreeting(JSON.parse(greeting.body).content);
-    }, {id: "/topic/two"});
+    stompClient.subscribe('/topic/two', (greeting) => {
+        showGreeting(JSON.parse(greeting.body));
+    }, {id: $("#name").val()});
 };
 
 stompClient.onWebSocketError = (error) => {
@@ -43,14 +43,30 @@ function disconnect() {
 }
 
 function sendName() {
+    const input = $("#name").val();
+    let json;
+    if (input.startsWith("https")) {
+        json = {'content': {'userid': null, 'imageUrl': input, 'language': 'EN'}};
+    } else {
+        json = {'content': {'userid': null, 'message': input, 'language': 'EN'}};
+    }
+
     stompClient.publish({
         destination: "/app/two",
-        body: JSON.stringify({'name': $("#name").val()})
+        body: JSON.stringify(json)
     });
 }
 
 function showGreeting(message) {
-    $("#greetings").append("<tr><td>" + message + "</td></tr>");
+    console.log(message);
+    const text = message.message;
+    $("#greetings").append("<tr><td>" + message.content.userId + " (" + message.time + ")" + ": </td></tr>");
+    if (text.startsWith("https")) {
+        $("#greetings").append("<img src=" + text + "><img>");
+    } else {
+        $("#greetings").append("<tr><td>" + text + "</td></tr>");
+    }
+
 }
 
 $(function () {

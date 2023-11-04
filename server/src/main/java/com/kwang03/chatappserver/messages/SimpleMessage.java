@@ -1,11 +1,9 @@
 package com.kwang03.chatappserver.messages;
 
-import com.kwang03.chatappserver.WebSocketSessionMapper;
 import com.kwang03.chatappserver.messages.content.MessageContent;
 import com.kwang03.chatappserver.messages.content.SimpleMessageContent;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

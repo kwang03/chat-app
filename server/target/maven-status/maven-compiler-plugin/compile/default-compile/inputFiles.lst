@@ -1,10 +1,16 @@
-C:\Users\kevin\OneDrive\School Work\Misc\ChatApp\server\src\main\java\com\kwang03\chatappserver\WebSocketEventListener.java
-C:\Users\kevin\OneDrive\School Work\Misc\ChatApp\server\src\main\java\com\kwang03\chatappserver\messages\ConnectionMessage.java
-C:\Users\kevin\OneDrive\School Work\Misc\ChatApp\server\src\main\java\com\kwang03\chatappserver\ChatAppServer.java
-C:\Users\kevin\OneDrive\School Work\Misc\ChatApp\server\src\main\java\com\kwang03\chatappserver\messages\DisconnectionMessage.java
-C:\Users\kevin\OneDrive\School Work\Misc\ChatApp\server\src\main\java\com\kwang03\chatappserver\messages\HelloMessage.java
-C:\Users\kevin\OneDrive\School Work\Misc\ChatApp\server\src\main\java\com\kwang03\chatappserver\WebSocketConfig.java
-C:\Users\kevin\OneDrive\School Work\Misc\ChatApp\server\src\main\java\com\kwang03\chatappserver\MessageFactory.java
-C:\Users\kevin\OneDrive\School Work\Misc\ChatApp\server\src\main\java\com\kwang03\chatappserver\endpoints\GreetingController.java
-C:\Users\kevin\OneDrive\School Work\Misc\ChatApp\server\src\main\java\com\kwang03\chatappserver\WebSocketMessageSender.java
-C:\Users\kevin\OneDrive\School Work\Misc\ChatApp\server\src\main\java\com\kwang03\chatappserver\messages\SimpleMessage.java
+C:\Users\kevin\IdeaProjects\chat-app\server\src\main\java\com\kwang03\chatappserver\messages\content\DisconnectionMessageContent.java
+C:\Users\kevin\IdeaProjects\chat-app\server\src\main\java\com\kwang03\chatappserver\messages\content\ConnectionMessageContent.java
+C:\Users\kevin\IdeaProjects\chat-app\server\src\main\java\com\kwang03\chatappserver\messages\content\MessageContent.java
+C:\Users\kevin\IdeaProjects\chat-app\server\src\main\java\com\kwang03\chatappserver\WebSocketEventListener.java
+C:\Users\kevin\IdeaProjects\chat-app\server\src\main\java\com\kwang03\chatappserver\WebSocketMessageSender.java
+C:\Users\kevin\IdeaProjects\chat-app\server\src\main\java\com\kwang03\chatappserver\messages\ImageMessage.java
+C:\Users\kevin\IdeaProjects\chat-app\server\src\main\java\com\kwang03\chatappserver\messages\DisconnectionMessage.java
+C:\Users\kevin\IdeaProjects\chat-app\server\src\main\java\com\kwang03\chatappserver\messages\MessageFactory.java
+C:\Users\kevin\IdeaProjects\chat-app\server\src\main\java\com\kwang03\chatappserver\WebSocketSessionMapper.java
+C:\Users\kevin\IdeaProjects\chat-app\server\src\main\java\com\kwang03\chatappserver\messages\content\ImageMessageContent.java
+C:\Users\kevin\IdeaProjects\chat-app\server\src\main\java\com\kwang03\chatappserver\messages\ConnectionMessage.java
+C:\Users\kevin\IdeaProjects\chat-app\server\src\main\java\com\kwang03\chatappserver\endpoints\TopicController.java
+C:\Users\kevin\IdeaProjects\chat-app\server\src\main\java\com\kwang03\chatappserver\messages\SimpleMessage.java
+C:\Users\kevin\IdeaProjects\chat-app\server\src\main\java\com\kwang03\chatappserver\ChatAppServer.java
+C:\Users\kevin\IdeaProjects\chat-app\server\src\main\java\com\kwang03\chatappserver\messages\content\SimpleMessageContent.java
+C:\Users\kevin\IdeaProjects\chat-app\server\src\main\java\com\kwang03\chatappserver\WebSocketConfig.java

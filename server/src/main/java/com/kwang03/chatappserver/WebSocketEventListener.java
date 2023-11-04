@@ -27,7 +27,8 @@ public class WebSocketEventListener {
 
         sessionMapper.subscribe(sessionId, userId);
 
-        ConnectionMessageContent content = new ConnectionMessageContent(userId, dest);
+        //  TODO: How to get language from event
+        ConnectionMessageContent content = new ConnectionMessageContent(userId, "EN", dest);
 
         WebSocketMessageSender.sendMessage(dest, MessageFactory.MessageType.CONNECTION, content, template);
     }
@@ -39,7 +40,7 @@ public class WebSocketEventListener {
 
         String userId = sessionMapper.unsubscribe(sessionId);
 
-        DisconnectionMessageContent content = new DisconnectionMessageContent(userId, topic);
+        DisconnectionMessageContent content = new DisconnectionMessageContent(userId, "EN", topic);
 
         WebSocketMessageSender.sendMessage(topic, MessageFactory.MessageType.DISCONNECTION, content, template);
     }

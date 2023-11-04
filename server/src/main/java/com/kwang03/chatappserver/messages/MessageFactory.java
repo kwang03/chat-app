@@ -10,7 +10,8 @@ public class MessageFactory {
     public enum MessageType {
         CONNECTION,
         DISCONNECTION,
-        SIMPLE
+        SIMPLE,
+        IMAGE
     }
 
     /**
@@ -25,6 +26,8 @@ public class MessageFactory {
                 return new ConnectionMessage(content);
             case DISCONNECTION:
                 return new DisconnectionMessage(content);
+            case IMAGE:
+                return new ImageMessage(content);
             default:
                 return new SimpleMessage(content);
         }
