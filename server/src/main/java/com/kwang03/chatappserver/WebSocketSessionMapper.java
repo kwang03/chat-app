@@ -14,6 +14,10 @@ public class WebSocketSessionMapper {
     public WebSocketSessionMapper() {
         this.sessions = new HashMap<>();
     }
+    //  Testing purposes only
+    public WebSocketSessionMapper(Map<String,String> mockedSessions) {
+        this.sessions = mockedSessions;
+    }
 
 
     public String getUserIdFromSessionId(String sessionId) {
@@ -35,5 +39,9 @@ public class WebSocketSessionMapper {
             throw new IllegalStateException("Session Id: " + sessionId + " does not exist");
         }
         return sessions.remove(sessionId);
+    }
+
+    public void clear() {
+        sessions.clear();
     }
 }
