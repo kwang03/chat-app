@@ -33,14 +33,14 @@ public class WebSocketConfigTest {
     }
 
     @Test
-    public void testConfigureMessageBroker() {
+    public void Test_Configure_Message_Broker() {
         testWebSocketConfig.configureMessageBroker(messageBrokerRegistryMock);
         verify(messageBrokerRegistryMock, times(1)).enableSimpleBroker(SUBSCRIBE_TOPIC_PREFIX);
         verify(messageBrokerRegistryMock, times(1)).setApplicationDestinationPrefixes(SEND_TOPIC_PREFIX);
     }
 
     @Test
-    public void testRegisterStompEndpoints() {
+    public void Test_Register_Stomp_Endpoints() {
         StompWebSocketEndpointRegistration registrationMock = mock(StompWebSocketEndpointRegistration.class);
         when(stompEndpointRegistryMock.addEndpoint(any(String.class))).thenReturn(registrationMock);
         testWebSocketConfig.registerStompEndpoints(stompEndpointRegistryMock);

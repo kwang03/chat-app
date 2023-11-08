@@ -3,7 +3,9 @@ package com.kwang03.chatappserver.messages;
 import com.kwang03.chatappserver.messages.content.DisconnectionMessageContent;
 import com.kwang03.chatappserver.messages.content.MessageContent;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
+@EqualsAndHashCode(callSuper = true)
 @Data
 public class DisconnectionMessage extends SimpleMessage {
     public DisconnectionMessage(MessageContent content) {
