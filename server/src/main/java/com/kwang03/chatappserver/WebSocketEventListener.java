@@ -24,7 +24,6 @@ public class WebSocketEventListener {
         String dest = (String) event.getMessage().getHeaders().get("simpDestination");
         String userId = (String) event.getMessage().getHeaders().get("simpSubscriptionId");
         String sessionId = (String) event.getMessage().getHeaders().get("simpSessionId");
-
         sessionMapper.subscribe(sessionId, userId);
 
         //  TODO: How to get language from event
